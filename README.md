@@ -10,7 +10,7 @@ In this work, we propose a methodology that assures the authenticity of the argu
 
 ## Example
 
-We target authentic counterhate arguments that address the specific hateful claims, as exemplified in the bottom two arguments in following Figure 1. 
+We target authentic counterhate arguments that address the specific hateful claims, as exemplified in the bottom two arguments in the following figure: 
 
 <p align="center">
 <img  src="Docs/figs/tweet1.png" width=70% height=70%>
