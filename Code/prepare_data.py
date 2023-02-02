@@ -6,10 +6,11 @@ import torch
 from torch.utils.data import TensorDataset
 from torch.utils.data import DataLoader, RandomSampler, SequentialSampler
 import os
+import warnings
+warnings.filterwarnings('ignore')
 
 # Constant seed for reproducibility.
 SEED = 42
-
 
 def preprocess_dataframe_tweets(df, col):
     # remove URL
