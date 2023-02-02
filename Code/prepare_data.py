@@ -66,7 +66,7 @@ def bert_encode(df, tokenizer, exp, max_seq_length=256):
         encoded_dict = tokenizer.encode_plus(
             sent,  # Sentence to encode.
             add_special_tokens=True,  # Add <s> and </s> at the beginning and the end
-            padding='max_length',
+            padding=True,
             max_length=max_seq_length,  # Pad & truncate all sentences.
             return_attention_mask=True,  # Construct attn. masks.
             return_tensors="pt",  # Return pytorch tensors.
