@@ -13,7 +13,7 @@ In this work, we propose a methodology that assures the authenticity of the argu
 We target authentic counterhate arguments that address the specific hateful claims, as exemplified in the bottom two arguments in following Figure 1. 
 
 <p align="center">
-<img  src="Docs/figs/tweet.png" width=70% height=70%>
+<img  src="Docs/figs/tweet1.png" width=70% height=70%>
 </p>
 
 Hateful tweet (top) and three replies with counterhate arguments. Previous work targets synthetic counterhate arguments that tend to be generic (first counterhate argument). In this paper, we find authentic counterhate arguments that address the hateful claims in the tweet at hand (2nd and 3rd counterhate arguments)
