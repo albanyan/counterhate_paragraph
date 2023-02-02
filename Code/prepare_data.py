@@ -46,17 +46,6 @@ def preprocess_dataframe_tweets(df, col):
     df[col + "_proc"] = df[col + "_proc"].str.strip()
 
 
-def encode_sentence(s, tokenizer):
-    return tokenizer.encode_plus(
-        s,  # Sentence to encode.
-        add_special_tokens=True,  # Add separation tokens
-        max_length=256,  # Pad & truncate all sentences.
-        pad_to_max_length=True,
-        return_attention_mask=True,  # Construct attn. masks.
-        return_tensors="pt",  # Return pytorch tensors.
-    )
-
-
 def bert_encode(df, tokenizer, exp, max_seq_length=256):
     input_ids = []
     attention_masks = []
@@ -66,7 +55,8 @@ def bert_encode(df, tokenizer, exp, max_seq_length=256):
         encoded_dict = tokenizer.encode_plus(
             sent,  # Sentence to encode.
             add_special_tokens=True,  # Add <s> and </s> at the beginning and the end
-            padding=True,
+            padding='max_length',
+            truncation=True,
             max_length=max_seq_length,  # Pad & truncate all sentences.
             return_attention_mask=True,  # Construct attn. masks.
             return_tensors="pt",  # Return pytorch tensors.
