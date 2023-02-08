@@ -1,6 +1,6 @@
 # Finding Authentic Counterhate Arguments
 
-This repository contains the corpus and code of the ACL-23 paper "Finding Authentic Counterhate Arguments: A Case Study with Public Figures". Authors: Abdullah Albanyan, Ahmed Hassan, and Eduardo Blanco.
+This repository contains the corpus and code of the ACL-23 paper (under review) "Finding Authentic Counterhate Arguments: A Case Study with Public Figures". Authors: Abdullah Albanyan, Ahmed Hassan, and Eduardo Blanco.
 <br />
 <!--[[paper link](https://ojs.aaai.org/index.php/AAAI/article/view/21284)]
 [[supplementary materials](/Docs/hate-twitter-supplemental.pdf)]-->
